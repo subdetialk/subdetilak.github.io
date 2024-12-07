@@ -1,0 +1,227 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #FFCC00;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+  min-height: 80vh;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FFCC00;
+}
+
+/* Botones */
+button {
+  background-color: #FF4500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px #000;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #FF6347;
+  transform: scale(1.1);
+}
+
+/* Página de Inicio */
+.inicio {
+  background: url('https://images7.alphacoders.com/134/thumb-1920-1348996.png') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Página de Videos */
+.videos {
+  background: url('https://images5.alphacoders.com/135/thumb-1920-1351278.png') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.subir-video {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #000;
+  margin-bottom: 20px;
+}
+
+#videos-list {
+  text-align: left;
+  margin: 20px auto;
+  max-width: 80%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #000;
+}
+
+video {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  border: 2px solid #FFCC00;
+  border-radius: 5px;
+}
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #FFCC00;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FFCC00;
+}
+
+/* Página de Inicio */
+.inicio {
+  background: url('https://images7.alphacoders.com/134/thumb-1920-1348996.png') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.registro {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #000;
+}
+
+/* Página de Videos */
+.videos {
+  background: url('https://images5.alphacoders.com/135/thumb-1920-1351278.png') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+}
+
+#videos-list {
+  text-align: left;
+  margin: 20px auto;
+  max-width: 80%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #000;
+}
+
+.video-container {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  color: #FFCC00;
+}
+
+video {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  border: 2px solid #FFCC00;
+  border-radius: 5px;
+}
+
+.likes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #FF4500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #FF6347;
+}
+
+/* Sección de Comentarios */
+.comments {
+  margin-top: 10px;
+}
+
+.comment-input {
+  margin-top: 10px;
+}
+
+.likes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #FF4500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  background-color: #FF6347;
+  transform: scale(1.1);
+}
+
+.counter {
+  font-weight: bold;
+  color: #FFD700;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plataforma de Videos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="inicio">
+    <header>
+      <h1>Bienvenido a la Plataforma</h1>
+    </header>
+    <main>
+      <div class="registro">
+        <h2>Registro</h2>
+        <input type="text" placeholder="Nombre de usuario" id="username">
+        <button onclick="registrarUsuario()">Registrarse</button>
+      </div>
+    </main>
+  </div>
+  <div class="videos" style="display: none;">
+    <header>
+      <h1>Subir Videos</h1>
+    </header>
+    <main>
+      <div class="subir-video">
+        <h2>Sube tu video</h2>
+        <input type="file" id="videoInput" accept="video/*">
+        <button onclick="subirVideo()">Subir</button>
+      </div>
+      <div id="videos-list">
+        <h2>Videos Subidos</h2>
+        <!-- Aquí se añadirán los videos -->
+      </div>
+    </main>
+  </div>
+  <footer>
+    
+  </footer>
+  
+  <!-- Código de Firebase -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
+    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
+    import { getStorage, ref, uploadBytes } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-storage.js";
+    
+    const firebaseConfig = {
+      apiKey: "AIzaSyDFFRQB1-0JRHCjMlSh4l8oYg0pxd_zthw",
+      authDomain: "sitiowep-de-videos.firebaseapp.com",
+      projectId: "sitiowep-de-videos",
+      storageBucket: "sitiowep-de-videos.firebasestorage.app",
+      messagingSenderId: "272309121216",
+      appId: "1:272309121216:web:95133c7c0a988444ad7d25",
+      measurementId: "G-BF7R047QK9"
+    };
+    
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    
+    // Inicializa Firestore y Firebase Storage
+    const db = getFirestore(app);
+    const storage = getStorage(app);
+  </script>
+
+  <!-- Tu archivo JavaScript -->
+  <script src="escriv.js"></script>
+</body>
+</html>
